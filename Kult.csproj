@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE7B6AA4-F4B9-4044-A11D-8D529667E769}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kult</RootNamespace>
+    <AssemblyName>Kult</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.107.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.107.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.107.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDostForm.Designer.cs">
+      <DependentUpon>AddDostForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProvForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProvForm.Designer.cs">
+      <DependentUpon>AddProvForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddResultForm.Designer.cs">
+      <DependentUpon>AddResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddZatrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddZatrForm.Designer.cs">
+      <DependentUpon>AddZatrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnalizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalizForm.Designer.cs">
+      <DependentUpon>AnalizForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm.Designer.cs">
+      <DependentUpon>ChildForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepForm.Designer.cs">
+      <DependentUpon>DepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocForm.Designer.cs">
+      <DependentUpon>DocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeDocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeDocForm.Designer.cs">
+      <DependentUpon>MakeDocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MerForm.Designer.cs">
+      <DependentUpon>MerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptForm.Designer.cs">
+      <DependentUpon>OptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrgForm.Designer.cs">
+      <DependentUpon>OrgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProvForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvForm.Designer.cs">
+      <DependentUpon>ProvForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepForm.Designer.cs">
+      <DependentUpon>RepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendForm.Designer.cs">
+      <DependentUpon>SendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shifr.cs" />
+    <Compile Include="SotrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SotrForm.Designer.cs">
+      <DependentUpon>SotrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecForm.Designer.cs">
+      <DependentUpon>SpecForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UchForm.Designer.cs">
+      <DependentUpon>UchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VForm.Designer.cs">
+      <DependentUpon>VForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VidForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VidForm.Designer.cs">
+      <DependentUpon>VidForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZatrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZatrForm.Designer.cs">
+      <DependentUpon>ZatrForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDostForm.resx">
+      <DependentUpon>AddDostForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProvForm.resx">
+      <DependentUpon>AddProvForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddResultForm.resx">
+      <DependentUpon>AddResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddZatrForm.resx">
+      <DependentUpon>AddZatrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalizForm.resx">
+      <DependentUpon>AnalizForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm.resx">
+      <DependentUpon>ChildForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepForm.resx">
+      <DependentUpon>DepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocForm.resx">
+      <DependentUpon>DocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeDocForm.resx">
+      <DependentUpon>MakeDocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MerForm.resx">
+      <DependentUpon>MerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptForm.resx">
+      <DependentUpon>OptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrgForm.resx">
+      <DependentUpon>OrgForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ProvForm.resx">
+      <DependentUpon>ProvForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepForm.resx">
+      <DependentUpon>RepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendForm.resx">
+      <DependentUpon>SendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SotrForm.resx">
+      <DependentUpon>SotrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecForm.resx">
+      <DependentUpon>SpecForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UchForm.resx">
+      <DependentUpon>UchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VForm.resx">
+      <DependentUpon>VForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VidForm.resx">
+      <DependentUpon>VidForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZatrForm.resx">
+      <DependentUpon>ZatrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
